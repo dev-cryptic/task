@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // Modal / Bottom Sheet Functionality
     const modalOverlay = document.getElementById('details-modal');
     if (modalOverlay) {
         const modalText = document.getElementById('modal-text');
@@ -32,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // "Book Now" Button & Toast Notification Functionality
     const bookNowButtons = document.querySelectorAll('.book-now-btn');
     const toast = document.getElementById('toast-notification');
     let toastTimeout;
@@ -72,7 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Filter Capsule Click Functionality
     const capsules = document.querySelectorAll('.capsule');
     capsules.forEach(capsule => {
         capsule.addEventListener('click', () => {
@@ -81,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Capsule Scroll Arrow Functionality
     const capsulesContainer = document.querySelector('.filter-capsules');
     const scrollLeftBtn = document.getElementById('scroll-left-btn');
     const scrollRightBtn = document.getElementById('scroll-right-btn');
